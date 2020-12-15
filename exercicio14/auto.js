@@ -1,6 +1,6 @@
-/*Crie uma função que apresente o ranking dos livros mais vendidos. 
-Você precisa diferenciar a posição apenas dos 3 primeiros do ranking,
-os demais serão apenas listados. */
+/*Considerando a entidade Cidade do exercício 13: https://trello.com/c/4YnGrbg1 
+crie uma função que recebe uma lista de cidades e retorna uma 
+lista com os nomes das cidades concatenados com o seu estado. */
 
 const local =[ 
     {   nome: "Cachoeirinha",
@@ -19,11 +19,11 @@ const local =[
         }
 ]
 
-
-
-const imprimeLocal = local.filter((cidade, estad) =>{
-    return cidade.estado ==="Rio Grande do Sul"
+const imprimeLocal = local.map((cidade, lugar) =>{
+    return `${cidade.nome} + ${cidade.estado}`
 });
 
 
+
 console.log(imprimeLocal)
+

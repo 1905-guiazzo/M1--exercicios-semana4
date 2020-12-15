@@ -1,6 +1,6 @@
 /*Considerando a entidade Cidade do exercício 13: https://trello.com/c/4YnGrbg1 
-crie uma função que recebe uma lista de cidades e retorna uma 
-lista com os nomes das cidades concatenados com o seu estado. */
+crie uma função que receba um objeto cidade e atribua nome e o estado a 
+duas variáveis e imprima elas no console. */
 
 const local =[ 
     {   nome: "Cachoeirinha",
@@ -19,10 +19,10 @@ const local =[
         }
 ]
 
-const imprimeLocal = local.map((cidade, estad) =>{
-    return `${nome} + ${estado}`
-});
 
-
-console.log(imprimeLocal)
-
+function localidade(local){
+const [city] = local;
+const {nome, estado} = city;
+return console.log(`Esta é ${nome} no estado de ${estado}`)
+};
+localidade(local);

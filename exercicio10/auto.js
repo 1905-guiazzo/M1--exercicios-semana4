@@ -4,3 +4,4 @@ somente resolver a promise caso o resultado seja par retornando o
 valor da soma e rejeitando a promise caso ímpar, 
 retornando uma mensagem explicativa */
 
+    
